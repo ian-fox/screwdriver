@@ -264,6 +264,10 @@ Signing keys should be rotated periodically.  For us to do that, we should have 
 }
 ```
 
+## Access Token Changes
+
+Access tokens should be issued as a set of two strings: `id` and `secret`. The secret will be hashed with a salt that is unique per-token.
+
 ## Terminology
 
  - **OAuth** - Flow for authenticating a user in their browser via an external source of truth (GitHub, GitLab, etc.).
